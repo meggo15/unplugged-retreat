@@ -383,9 +383,146 @@ footer .p {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+   @media only screen and (min-width: 768px) {
+    /*Tablet styles here*/
+       /* General styles */
+       .content-wrapper {
+        max-width: 640px;
+        margin: 100px 0;
+    }
+ 
+    /* Header */
+ 
+    header {
+      justify-content: center;
+ 
+    }
+ 
+    header .content-wrapper {
+        width: 100%;
+        justify-content: center;
+    }
+ 
+    header nav {
+        width: 50%;
+    }
+ 
+    header nav ul {
+      justify-content: space-between;
+ 
+    }
+ 
+    .header-divider {
+        display: none;
+    }
+ 
+    /* Hero Area */
+ 
+    /* Aside */
+    aside .content-wrapper {
+        margin: 50px 0;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+ 
+    aside .content-wrapper .form-description,
+    aside .content-wrapper .form {        
+        width: 50%;        
+        margin: 0;
+    }
+ 
+    /* Features */
+ 
+    .features article {
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+      flex-basis: auto;
+    }
+ 
+    .features .features-item-description {
+        width: 25%;
+    }
+ 
+    /* Reviews */
+    .reviews article {
+      display: flex;
+      justify-content: row wrap;
+ 
+    }
+    
+    .reviews article div {
+        width: 75%;        
+    }
+
+/*FAQ*/
+
+    .main-faq {
+      flex-basis: auto;
+    }
+
+    .faq .content-wrapper {
+      justify-content: space-between;
+  }
+  
+  .faq-content {
+      flex-basis: 40%;
+  }
+
+  .faq h2 {
+      width: 100%;
+  }
+
+
+/*About*/
+
+.mission-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.mission-content p {
+  width: 50%;
+}
+
+.contact-section .content-wrapper h2 {
+  width: 50%;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+/* Footer */
+    footer .content-wrapper {
+        width: 100%;
+        margin: 100px 0;
+    }
+    
+    .footer-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+ 
+    }
+ 
+    footer .contact {
+        margin-bottom: 0;
+    }
+ 
+    footer .copyright {
+        width: 20%;
+    }
+}
+    }
+     
+    @media only screen and (min-width: 1200px) {
+    /*Desktop styles here*/
+    }
+    
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),

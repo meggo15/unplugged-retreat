@@ -100,8 +100,10 @@ body {
  
 ul, 
 ol {
-  text-decoration: none;
+  text-transform: uppercase;
   list-style: none;
+  font-weight: bold;
+  font-size: 1.25 em;
 }
  
 a {
@@ -112,23 +114,27 @@ a {
 h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 2.25em;
+  color: #e2e3ed;;
 }
  
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  color: #e2e3ed;;
 }
  
 h3, 
 h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
+  color: #e2e3ed;
  
 }
  
 p {
   font-size: 0.875;
   line-height: 21px;
+  color: #e2e3ed;
 	
 }
  
@@ -165,6 +171,7 @@ footer {
 
     header {
       padding: 15px 0;
+      background-color:#202322;
 
     }
 
@@ -180,8 +187,7 @@ footer {
       width: 60%;
       display: flex;
       align-content: center;
-      flex-flow: row wrap;
-      justify-content: space-around;
+      justify-content: center;
     }
 
     header .nav ul {
@@ -189,6 +195,7 @@ footer {
       display: flex;
       justify-content: center;
       align-content: center;
+      flex-flow: row wrap;
       
     }
     .header-divider {
@@ -207,6 +214,7 @@ main .content-wrapper {
   display: flex;
   justify-content: center;
   align-content: center;
+  background-color:#527158;
 }
 
 aside {
@@ -235,6 +243,7 @@ aside {
 }
 
 .features features-item-description {
+  text-align: center;
 
 }
 .features fontawesome-icon {
@@ -249,6 +258,7 @@ aside {
   justify-content: center;
   align-content: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 .features-article {
@@ -317,13 +327,12 @@ aside {
 
 footer {
   padding: 0 15px;
-
+  background-color: #202322;
 }
 
 footer .content-wrapper {
   width: 55%;
   margin: 50px 0;
-
 }
 
 .footer-content {
@@ -353,6 +362,31 @@ footer .p {
 .copyright p{
 
 }
+
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 
 /* ==========================================================================
    Helper classes

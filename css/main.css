@@ -138,12 +138,12 @@ p {
 	
 }
  
-img {
- 
+img { 
+	width: 100%;
 }
  
 figure {
- 
+    margin: 0;
 }
  
 address {
@@ -205,6 +205,14 @@ footer {
       justify-content: space-around;
   
     }
+
+    header figure {
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+  }
    
 
 
@@ -215,6 +223,17 @@ footer {
   justify-content: center;
   align-content: center;
   
+}
+
+.hero-area figure {
+  background-image: url('img/jake-melara-30679-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row wrap;
 }
 
 aside {
@@ -250,7 +269,7 @@ input[type=button] {
   border: none;
   text-align: center;
   text-transform: uppercase;
-
+}
 
 .features {
   display: flex;
@@ -290,9 +309,18 @@ input[type=button] {
 }
 
 .reviews h3 {
-  width: 50%;
-
+  width: 50%
 }
+
+.reviews figure {
+  background-image: url('img/rawpixel-800820-unsplash1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row wrap;
 
 /* -------------------- Mobile styles - About page -------------------- */
 
@@ -490,7 +518,10 @@ footer .p {
       justify-content: center;
  
     }
- 
+
+    header figure {
+      width: 37.5%;
+    }
     header .content-wrapper {
         width: 100%;
         justify-content: center;
@@ -510,6 +541,10 @@ footer .p {
     }
  
     /* Hero Area */
+
+    .hero-area figure {
+        width: 100%;
+    }
  
     /* Aside */
     aside .content-wrapper {
@@ -547,6 +582,10 @@ footer .p {
     
     .reviews article div {
         width: 75%;        
+    }
+
+    .reviews figure {
+      width: 42%;
     }
 
 /*FAQ*/
@@ -617,9 +656,17 @@ footer .p {
       max-width: 960px;
  }
 
+ header figure {
+   width: 26%;
+ }
+
   /* Hero */
  .hero-area h1 {
      width: 53%;
+ }
+
+ .hero-area figure {
+   width: 100%
  }
 
  /* Aside */
@@ -644,6 +691,10 @@ footer .p {
  /* Reviews */ 
  .reviews article div {
      width: 40%;
+ }
+
+ .reviews figure  {
+   width: 40%;
  }
  
  /*About*/

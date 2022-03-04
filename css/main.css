@@ -153,68 +153,68 @@ address {
 }
 
 .content-wrapper {
-    width: 90%;
+    width: 100%;
     margin: 50px 0;
 }
 
   /* -------------------- Base Header - Footer Styles -------------------- */
 header,
 footer {
+    background-color:#202322;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
 }
 
-
 /*  ---------------- Header styles------------------------ */
 
     header {
       padding: 15px 0;
-      background-color:#202322;
-
     }
 
     header .content-wrapper {
+      margin: 0;
       display: flex;
       justify-content: center;
       align-content: center;
       flex-flow: row wrap;
-      margin: 0;
+     
+    }
+    .header-divider {
+      background: #3a3a3a; 
+      height: 1px;
+      width: 100%;
+      margin: 10px 0 20px 0;
     }
 
     header nav {
       width: 60%;
+      font-size: 1.125em;
+      font-weight: 700;
+      text-transform: uppercase;
       display: flex;
-      align-content: center;
-      justify-content: center;
+      justify-content: space-around;
+      align-items: center;
+      flex-flow: row wrap;
     }
 
     header .nav ul {
-      width: 20%;
+      width: 100%;
       display: flex;
-      justify-content: center;
-      align-content: center;
-      flex-flow: row wrap;
-      
+      justify-content: space-around;
+  
     }
-    .header-divider {
-      width: 50%;
-    }
-
+   
 
 
 /* -------------------- Mobile styles - Homepage -------------------- */
 
-main .content-wrapper {
-
-
-}
 .hero-area {
   display: flex;
   justify-content: center;
   align-content: center;
-  background-color:#527158;
+  
 }
 
 aside {
@@ -222,15 +222,35 @@ aside {
   justify-content: center;
   align-content: center;
   flex-flow: row wrap;
+  background-color:#527158;
 }
 
-.form-descrption {
 
+aside .form {
+  margin-top: 30px;
 }
-
-.form {
-
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
 }
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+
 
 .features {
   display: flex;
@@ -259,6 +279,10 @@ aside {
   align-content: center;
   flex-flow: row wrap;
   background-color: #2a423a;
+}
+
+.reviews-article {
+  width: 100%;
 }
 
 .features-article {
@@ -363,30 +387,6 @@ footer .p {
 
 }
 
-aside .form {
-  margin-top: 30px;
-}
- 
-input[type=text] {
-  box-sizing: border-box;
-  width: 100%;
-  color: #2a423a;
-  font-style: italic;
-  padding: 1em;
-}
- 
-input[type=button] {
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 20px;
-  background-color: #2a423a;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 1.125em;
-  color: #e2e3ed;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
 
 /* ==========================================================================
    Helper classes

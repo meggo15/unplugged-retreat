@@ -412,8 +412,10 @@ footer .p {
 
 .social-icons {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-content: center;
+  color: #2a423a;
+  
 }
 
 .contact {
